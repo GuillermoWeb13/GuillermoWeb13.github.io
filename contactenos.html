@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos | Patitas Felices</title>
+    <link rel="stylesheet" href="styleContactenos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+            <h1>Patitas Felices</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="submenu"><a href="#">Servicios</a>
+                    <ul class="submenu-servicios">
+                        <li><a href="#">Consulta General</a></li>
+                        <li><a href="#">Vacunación</a></li>
+                        <li><a href="#">Cirugías</a></li>
+                        <li><a href="#">Baño y Estética</a></li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contactenos.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contacto">
+            <h2>Contáctanos</h2>
+            <div class="contenido-contacto">
+                <form class="formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+
+                <div class="imagen-contacto">
+                    <img src="img/contacto.jpg" alt="Contáctanos">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="piedepagina">
+        <div class="logo"><img src="img/logo.png" alt=""><h3 class="text-piedepagina">Patitas Felices</h3></div>
+        <div class="box-text">
+            <h3 class="text-siguenos">Síguenos</h3><p>2025 ©Veterinaria - Todos los derechos reservados.</p>
+        </div>
+        <div class="box-icons">
+            <img src="img/brand-instagram .svg" alt="">
+            <img src="img/brand-youtube .svg" alt="">
+            <img src="img/brand-twitter.svg" alt="">
+            <img src="img/brand-facebook.svg" alt="">
+        </div>
+    </footer>
+</body>
+</html>

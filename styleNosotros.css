@@ -1,0 +1,301 @@
+body {
+    margin: 0;
+    background: #FFFFFF;
+}
+
+/* HEADER */
+header {
+    background-color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 5%;
+    height: auto;
+}
+
+h1 {
+    color: #117a65;
+    margin: 0 0 0 10px;
+    padding-top: 10px;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* NAVGACIÓN */
+nav .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #A8E6CF;
+    padding: 10px 10px;
+    margin: 0;
+}
+
+.menu li {
+    position: relative;
+    margin-left: 150px;
+}
+
+.submenu-servicios li {
+    margin-left: 10px;
+}
+
+.submenu-servicios {
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: #A8E6CF;
+    padding: 0;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    top: 100%;
+    left: 0;
+    z-index: 100;
+}
+
+.submenu-servicios li {
+    padding: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333333;
+    transition: color 0.3s;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+
+.submenu-servicios a {
+    font-size: 15px;
+}
+
+.submenu:hover .submenu-servicios {
+    display: block;
+}
+
+.menu a:hover {
+    color: #ffffff;
+}
+
+.submenu-servicios a:hover {
+    color: #ffffff;
+}
+
+/* SECCIÓN NOSOTROS */
+.nosotros-info {
+    max-width: 1100px;
+    margin: 60px auto 100px auto;
+    padding: 0 20px;
+    color: #333333;
+    text-align: center;
+}
+
+.nosotros-info h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    color: #117a65;
+    margin-bottom: 20px;
+}
+
+.nosotros-info p {
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    text-align: justify;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* EQUIPO */
+.equipo {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.miembro {
+    background-color: #f7f9f9;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.miembro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.miembro h3 {
+    color: #117a65;
+    margin-top: 15px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.miembro p {
+    font-size: 14px;
+    color: #555555;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* FOOTER */
+.piedepagina {
+    background-color: #A8E6CF;
+    height: 300px;
+}
+
+.piedepagina .logo img {
+    width: 5%;
+    height: 2%;
+    padding-left: 280px;
+}
+
+.text-piedepagina {
+    color: #117a65;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.text-siguenos {
+    color: #117a65;
+    margin: 0;
+    font-size: 30px;
+    padding-left: 300px;
+    margin-top: 30px;
+}
+
+.box-icons {
+    margin-top: 20px;
+    padding-left: 248px;
+}
+
+.box-icons img {
+    margin-left: 50px;
+}
+
+.box-text {
+    display: flex;
+    gap: 600px;
+}
+
+.box-text p {
+    margin-top: 30px;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 40%;
+        padding-bottom: 10px;
+    }
+
+    nav .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .submenu-servicios {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .submenu-servicios li {
+        padding: 10px 0;
+        margin-left: 0;
+    }
+
+    .submenu:hover .submenu-servicios {
+        display: none;
+    }
+
+    .submenu .submenu-servicios {
+        display: none;
+    }
+
+    .submenu:hover .submenu-servicios {
+        display: block;
+        position: static;
+    }
+
+    .nosotros-info {
+        margin: 40px 20px 60px 20px;
+    }
+
+    .equipo {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .miembro {
+        width: 90%;
+    }
+
+    .piedepagina {
+        height: auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .piedepagina .logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .piedepagina .logo img {
+        padding-left: 0;
+        width: 30%;
+        height: auto;
+    }
+
+    .text-piedepagina {
+        padding-top: 10px;
+    }
+
+    .box-text {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .text-siguenos {
+        padding-left: 0;
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .box-icons {
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .box-icons img {
+        margin: 10px;
+        width: 30px;
+        height: 30px;
+    }
+}

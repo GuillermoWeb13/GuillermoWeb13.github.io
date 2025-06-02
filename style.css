@@ -1,0 +1,431 @@
+body {
+    margin: 0;
+    background: #FFFFFF;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+h1 {
+    color: #117a65;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    width: 5%;
+    height: 2%;
+}
+
+nav .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #A8E6CF;
+    padding: 10px 10px;
+    margin: 0;
+}
+
+.menu li {
+    position: relative;
+    margin-left: 150px;
+}
+
+.submenu-servicios li {
+    margin-left: 10px;
+}
+
+.submenu-servicios {
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: #A8E6CF;
+    padding: 0;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submenu-servicios li {
+    padding-top: 15px;
+    bottom: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333333;
+    transition: color 0.3s;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.submenu-servicios a {
+    font-size: 15px;
+}
+
+.submenu:hover .submenu-servicios {
+    display: block;
+}
+
+.menu a:hover,
+.submenu-servicios a:hover {
+    color: #ffffff;
+}
+
+/* BANNER */
+
+.banner {
+    height: 300px;
+    background-color: #e8f6f3;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.banner img {
+    width: 25%;
+    height: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cursiva {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    max-width: 600px;
+}
+
+.servicio {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* QUIÉNES SOMOS */
+
+.quienes-somos-beneficios {
+    display: flex;
+    margin: 80px 80px 100px 80px;
+    gap: 100px;
+    color: #333333;
+}
+
+.contenido-quienes-somos {
+    width: 70%;
+}
+
+.contenido-quienes-somos img {
+    width: 50%;
+    padding-top: 50px;
+    margin-left: 290px;
+}
+
+.contenido-quienes-somos h2 {
+    color: #117a65;
+    padding-top: 20px;
+    padding-right: 0;
+    width: 25%;
+    margin-left: 480px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.contenido-quienes-somos p {
+    text-align: justify;
+    max-width: 700px;
+    margin-left: 210px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenido-beneficios {
+    width: 30%;
+    height: 10%;
+}
+
+.contenido-beneficios h2 {
+    color: #117a65;
+    padding-top: 0px;
+    padding-right: 0;
+    width: 50%;
+    margin-left: 100px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.lista-beneficios {
+    list-style: none;
+    padding: 0;
+    margin-left: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.lista-beneficios li {
+    padding-bottom: 10px;
+}
+
+/* TESTIMONIO */
+
+.testimonio {
+    background-color: #ffffff;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+}
+
+.testimonio p {
+    max-width: 630px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.testimonio h5 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #a6acaf;
+    margin: 0;
+}
+
+/* FLEXBOX */
+
+.flexbox {
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flex-items-uno,
+.flex-items-dos,
+.flex-items-tres {
+    width: 30%;
+    height: 500px;
+    margin: 10px;
+    padding-top: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flex-items-uno {
+    background-color: #fdedec;
+    margin-left: 23px;
+}
+
+.flex-items-dos {
+    background-color: #d6eaf8;
+    margin-left: 23px;
+}
+
+.flex-items-tres {
+    background-color: #d1f2eb;
+    margin-left: 23px;
+}
+
+.flexbox img {
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.flexbox p {
+    margin: 40px;
+}
+
+/* FOOTER */
+
+.piedepagina {
+    background-color: #A8E6CF;
+    margin-top: 100px;
+    height: 300px;
+}
+
+.piedepagina .logo img {
+    width: 5%;
+    height: 2%;
+    padding-left: 280px;
+}
+
+.text-piedepagina {
+    color: #117a65;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.text-siguenos {
+    color: #117a65;
+    margin: 0;
+    font-size: 30px;
+    padding-left: 300px;
+    margin-top: 30px;
+}
+
+.box-icons {
+    margin-top: 20px;
+    padding-left: 248px;
+}
+
+.box-icons img {
+    margin-left: 50px;
+}
+
+.box-text {
+    display: flex;
+    gap: 600px;
+}
+
+.box-text p {
+    margin-top: 30px;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+    .logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 40%;
+    }
+
+    h1 {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    nav .menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .submenu-servicios {
+        position: static;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    .submenu-servicios li {
+        padding-top: 10px;
+    }
+
+    .banner {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .banner img {
+        width: 80%;
+        height: auto;
+    }
+
+    .texto-banner {
+        max-width: 90%;
+    }
+
+    .quienes-somos-beneficios {
+        flex-direction: column;
+        margin: 20px;
+        gap: 40px;
+    }
+
+    .contenido-quienes-somos,
+    .contenido-beneficios {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contenido-quienes-somos img {
+        width: 80%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .contenido-quienes-somos h2,
+    .contenido-beneficios h2 {
+        margin: 0 auto 20px;
+        text-align: center;
+    }
+
+    .contenido-quienes-somos p,
+    .lista-beneficios {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .testimonio {
+        width: 90%;
+    }
+
+    .testimonio p {
+        margin: 20px;
+    }
+
+    .flexbox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-items-uno,
+    .flex-items-dos,
+    .flex-items-tres {
+        width: 90%;
+        height: auto;
+    }
+
+    .piedepagina {
+        height: auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .piedepagina .logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .piedepagina .logo img {
+        padding-left: 0;
+        width: 30%;
+        height: auto;
+    }
+
+    .text-piedepagina {
+        padding-top: 10px;
+    }
+
+    .box-text {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .text-siguenos {
+        padding-left: 0;
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .box-icons {
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .box-icons img {
+        margin: 10px;
+        width: 30px;
+        height: 30px;
+    }
+}
